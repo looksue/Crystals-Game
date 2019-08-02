@@ -1,27 +1,45 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Simple Crystal Game</title>
-  <style type ="text/css"></style>
-  </style>
-  </head>
+    <title>Simple Crystal Game</title>
+    <style type="text/css"></style>
+    </style>
+</head>
+
 <body>
-  <div id="crystals">
-  
-    <img class="crystal-image" src="http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg" alt="crystals">
-
+    <div id="crystal1">
+        <img class="crystal-image"
+            src="assets\images\diamond.png"
+            alt="crystals">
     </div>
-   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   <script type="text/javascript">
+    <div id="crystal2">
+        <img class="crystal-image"
+            src="assets\images\emerald.png"
+            alt="crystals">
+    </div>
+    <div id="crystal3">
+        <img class="crystal-image"
+            src="assets\images\ruby.png"
+            alt="crystals">
+    </div>
+    <div id="crystal4">
+        <img class="crystal-image"
+            src="assets\images\sapphire.png"
+            alt="crystals">
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
 
-   $(".crystal-image").on("click", function() {
-        alert ("you clicked a crystal");
-    })
-           
-    
+        $(".crystal-image").on("click", function () {
+            alert("you clicked a crystal");
+        })
 
 
 
-</script>
+
+
+    </script>
 </body>
+
 </html>
