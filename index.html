@@ -3,36 +3,34 @@
 
 <head>
     <title>Simple Crystal Game</title>
-    <style type="text/css"></style>
-    </style>
+    <link rel="stylesheet" type="text/css" href="assets\css\style.css" />
 </head>
 
 <body>
     <div>
-        <img class="crystal-image" id="crystal1"
-            src="assets\images\diamond.png"
-            alt="crystals">
+        <img class="crystal-image" id="crystal1" src="assets\images\diamond.png" alt="crystals">
     </div>
     <div>
-        <img class="crystal-image" id="crystal2"
-            src="assets\images\emerald.png"
-            alt="crystals">
+        <img class="crystal-image" id="crystal2" src="assets\images\emerald.png" alt="crystals">
     </div>
     <div>
-        <img class="crystal-image" id="crystal3"
-            src="assets\images\ruby.png"
-            alt="crystals">
+        <img class="crystal-image" id="crystal3" src="assets\images\ruby.png" alt="crystals">
     </div>
     <div>
-        <img class="crystal-image" id="crystal4"
-            src="assets\images\sapphire.png"
-            alt="crystals">
+        <img class="crystal-image" id="crystal4" src="assets\images\sapphire.png" alt="crystals">
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
-
+        // declare variables
+        var counter = 0;
+        var randomCrystal1 = Math.floor(Math.random() * 12);
+        var randomCrystal2 = Math.floor(Math.random() * 12);
+        var randomCrystal3 = Math.floor(Math.random() * 12);
+        var randomCrystal4 = Math.floor(Math.random() * 12);
+        
         $(".crystal-image").on("click", function (ev) {
-            alert("You clicked a crystal: " + ev.target.id);
+            counter += 1;
+            alert("You clicked a crystal " + counter + " times!");
         })
 
 
