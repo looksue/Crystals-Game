@@ -8,31 +8,31 @@
 </head>
 
 <body>
-    <div id="crystal1">
-        <img class="crystal-image"
+    <div>
+        <img class="crystal-image" id="crystal1"
             src="assets\images\diamond.png"
             alt="crystals">
     </div>
-    <div id="crystal2">
-        <img class="crystal-image"
+    <div>
+        <img class="crystal-image" id="crystal2"
             src="assets\images\emerald.png"
             alt="crystals">
     </div>
-    <div id="crystal3">
-        <img class="crystal-image"
+    <div>
+        <img class="crystal-image" id="crystal3"
             src="assets\images\ruby.png"
             alt="crystals">
     </div>
-    <div id="crystal4">
-        <img class="crystal-image"
+    <div>
+        <img class="crystal-image" id="crystal4"
             src="assets\images\sapphire.png"
             alt="crystals">
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
 
-        $(".crystal-image").on("click", function () {
-            alert("you clicked a crystal");
+        $(".crystal-image").on("click", function (ev) {
+            alert("You clicked a crystal: " + ev.target.id);
         })
 
 
