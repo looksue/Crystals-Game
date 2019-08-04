@@ -1,3 +1,33 @@
+.jewelheader {
+    background-color: #08a6ce;
+    width: 200px;
+    text-align: center; 
+    padding: 5px;
+}
+
+.jewelinstructions {
+    background-color: rgb(221, 216, 209);
+    width: 400px;
+    margin: 5px, 5px, 5px, 5px;
+    padding: 5px;
+    }
+.jewelrandomnumber {
+    background-color: rgb(66, 170, 66);
+    width: 150px; 
+    text-align: left;
+    height: 100px;
+    }
+.jewelscores {
+    background-color: aqua;
+    width: 50px;
+    text-align: center;
+    height: 100px;
+    }
+    .jewelscoreheader{
+        
+    }
+
+
 .crystal-image {
     width: 60px;
     height: 60px;
