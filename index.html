@@ -48,6 +48,7 @@
             randomCrystal2 = Math.floor(Math.random() * 12) + 1;
             randomCrystal3 = Math.floor(Math.random() * 12) + 1;
             randomCrystal4 = Math.floor(Math.random() * 12) + 1;
+
             randomNumber = Math.floor(Math.random() * 102) + 19;
             totalScore = 0;
             // display game status
@@ -56,10 +57,46 @@
             $("#jewelscores").html("<p>Wins: " + wins + "</p><p>Losses: " + losses + "</p>");
         }
 
+        $(".crystal-image").on("click", function (event) {
 
-        $(".crystal-image").on("click", function (ev) {
-            counter += 1;
-            alert("You clicked a crystal " + counter + " times!");
+            // add the value of the crystal to totalscore
+            if (event.target.id === "crystal1") {
+                totalScore = totalScore + randomCrystal1;
+            }
+            if (event.target.id === "crystal2") {
+                totalScore = totalScore + randomCrystal2;
+            }
+            if (event.target.id === "crystal3") {
+                totalScore = totalScore + randomCrystal3;
+            }
+            if (event.target.id === "crystal4") {
+                totalScore = totalScore + randomCrystal4;
+            }
+
+            // display totalscore
+
+            $("#jeweltotalscore").text(totalScore);
+
+            // compare totalscore to randomnumber
+
+            if (totalScore < randomNumber) {        // keep playing
+                return;
+            };
+
+            if (totalScore === randomNumber) {      // winner
+                wins = wins + 1;
+                $("#jewelscores").html("<p>Wins: " + wins + "</p><p>Losses: " + losses + "</p>");
+                initializeGame();
+
+            };
+
+            if (totalScore > randomNumber) {        // loser
+                losses = losses + 1; 
+                $("#jewelscores").html("<p>Wins: " + wins + "</p><p>Losses: " + losses + "</p>");
+                initializeGame();
+
+            };
+
         })
 
         initializeGame();
