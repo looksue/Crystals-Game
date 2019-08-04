@@ -7,29 +7,29 @@
 </head>
 
 <body>
-    <div><h1>Jewel Junky!</h1></div>
-    <div>
+    <div class="jewelheader">
+        <h1>Jewel Junky!</h1>
+    </div>
+    <div class="jewelinstructions">
         <p>You will be given a random number at the start of the game. </p>
-        <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score. </p>
-        <p>You win the game by matching your total score to the random number, you loss the game if your total score goes above the random number.</p>
+        <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your
+            total score. </p>
+        <p>You win the game by matching your total score to the random number, you loss the game if your total score
+            goes above the random number.</p>
         <p>The value of each crystal is hidden from you until you click on it. </p>
         <p>Each time when the game starts, the game will change the value of each crystal. </p>
     </div>
-    <div></div>
-    <div></div>
-
+    <div class="jewelrandomnumber" id="jewelrandomnumber"></div>
+    <div class="jewelscores" id="jewelscores"></div>
     <div>
         <img class="crystal-image" id="crystal1" src="assets\images\diamond.png" alt="crystals">
-    </div>
-    <div>
         <img class="crystal-image" id="crystal2" src="assets\images\emerald.png" alt="crystals">
-    </div>
-    <div>
         <img class="crystal-image" id="crystal3" src="assets\images\ruby.png" alt="crystals">
-    </div>
-    <div>
         <img class="crystal-image" id="crystal4" src="assets\images\sapphire.png" alt="crystals">
     </div>
+    <div class="jewelscoreheader">Your total score is: </div>
+    <div class="jeweltotalscore" id="jeweltotalscore"></div>
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
         // declare variables
