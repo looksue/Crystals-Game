@@ -42,18 +42,22 @@
         var randomCrystal3 = 0;
         var randomCrystal4 = 0;
 
+        function initializeGame(){
+        randomCrystal1 = Math.floor(Math.random() * 12) + 1;
+        randomCrystal2 = Math.floor(Math.random() * 12) + 1;
+        randomCrystal3 = Math.floor(Math.random() * 12) + 1;
+        randomCrystal4 = Math.floor(Math.random() * 12) + 1;
+        randomNumber = Math.floor(Math.random() * 102) + 19;
+            alert("hi");
+        }
 
-
-        var randomCrystal1 = Math.floor(Math.random() * 12);
-        var randomCrystal2 = Math.floor(Math.random() * 12);
-        var randomCrystal3 = Math.floor(Math.random() * 12);
-        var randomCrystal4 = Math.floor(Math.random() * 12);
 
         $(".crystal-image").on("click", function (ev) {
             counter += 1;
             alert("You clicked a crystal " + counter + " times!");
         })
 
+        initializeGame();
 
 
 
