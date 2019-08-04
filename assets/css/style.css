@@ -3,8 +3,9 @@
     padding: 5px;
 }
 body {
-    background-color: grey;
-}
+    background-image: url("../images/128-136.jpg");
+    background-repeat: repeat;
+    }
 
 .jewelheader {
     background-color: #08a6ce;
