@@ -42,13 +42,18 @@
         var randomCrystal3 = 0;
         var randomCrystal4 = 0;
 
-        function initializeGame(){
-        randomCrystal1 = Math.floor(Math.random() * 12) + 1;
-        randomCrystal2 = Math.floor(Math.random() * 12) + 1;
-        randomCrystal3 = Math.floor(Math.random() * 12) + 1;
-        randomCrystal4 = Math.floor(Math.random() * 12) + 1;
-        randomNumber = Math.floor(Math.random() * 102) + 19;
-            alert("hi");
+        function initializeGame() {
+            // set variables
+            randomCrystal1 = Math.floor(Math.random() * 12) + 1;
+            randomCrystal2 = Math.floor(Math.random() * 12) + 1;
+            randomCrystal3 = Math.floor(Math.random() * 12) + 1;
+            randomCrystal4 = Math.floor(Math.random() * 12) + 1;
+            randomNumber = Math.floor(Math.random() * 102) + 19;
+            totalScore = 0;
+            // display game status
+            $("#jewelrandomnumber").text(randomNumber);
+            $("#jeweltotalscore").text(totalScore);
+            $("#jewelscores").html("<p>Wins: " + wins + "</p><p>Losses: " + losses + "</p>");
         }
 
 
