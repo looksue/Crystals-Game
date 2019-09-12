@@ -5,4 +5,4 @@ The values of the crystals are hidden from you until you click on it. You can cl
 If you match the number, you win.
 If you go over the number, you lose. 
 Then game resets back to a new random number and you can play again.
-https://looksue.github.io/Mystery-Crystals-Game/
+https://looksue.github.io/Crystals-Game/
