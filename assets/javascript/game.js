@@ -34,7 +34,7 @@ function initializeGame() {
     justwonorlost = "";
 }
 
-$(".crystal-image").on("click", function (event) {
+$(".crystal-span").on("click", function (event) {
 
     // add the value of the crystal to totalscore
     if (event.target.id === "crystal1") {
