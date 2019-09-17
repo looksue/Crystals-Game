@@ -41,7 +41,10 @@ body {
     float: left;
     margin: 5px;
     color: white;
+}
 
+.jewelscores p {
+    padding:0px;
 }
 .jewels {
     clear: both;

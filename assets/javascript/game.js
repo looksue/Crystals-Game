@@ -26,10 +26,10 @@ function initializeGame() {
         $("#jewelscores").html("<p>Wins: " + wins + "</p><p>Losses: " + losses + "</p>");
     }
     if (justwonorlost === "won") {
-        $("#jewelscores").html("<p>You won!</p><p>Wins: " + wins + "</p><p>Losses: " + losses + "</p>");
+        $("#jewelscores").html("<p>You won!<br />Wins: " + wins + "</p><p>Losses: " + losses + "</p>");
     }
     if (justwonorlost === "lost") {
-        $("#jewelscores").html("<p>You lost!</p><p>Wins: " + wins + "</p><p>Losses: " + losses + "</p>");
+        $("#jewelscores").html("<p>You lost!<br />Wins: " + wins + "</p><p>Losses: " + losses + "</p>");
     }
     justwonorlost = "";
 }
