@@ -62,12 +62,12 @@ $(".crystal-image").on("click", function (event) {
 
     if (totalScore === randomNumber) {      // winner
         wins = wins + 1;
-        justwonorlost = "won";        
+        justwonorlost = "won";
         initializeGame();
     };
 
     if (totalScore > randomNumber) {        // loser
-        losses = losses + 1; 
+        losses = losses + 1;
         justwonorlost = "lost";
         initializeGame();
     };
