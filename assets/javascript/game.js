@@ -19,7 +19,7 @@ function initializeGame() {
     randomNumber = Math.floor(Math.random() * 102) + 19;
     totalScore = 0;
     // display game status
-    $("#jewelrandomnumber").text(randomNumber);
+    $("#jewelrandomnumber").text("Random number to match is: " + randomNumber);
     $("#jeweltotalscore").text(totalScore);
 
     if (justwonorlost === "") {

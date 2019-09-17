@@ -3,59 +3,74 @@
 }
 body {
     background-image: url("../images/background.jpg");
-    }
+    background-size: cover;
+}
 
 .jewelheader {
     background-color: #08a6ce;
-    width: 405px;
+    width: 400px;
     text-align: center; 
-    padding: 3px;
+    padding: 5px;
     text-align: center;
     margin: 5px;    
+    color: white; 
 }
 
 .jewelinstructions {
     background-color: rgb(221, 216, 209);
     width: 400px;
-    margin: 5px, 5px, 5px, 5px;
     padding: 5px;
     margin: 5px;
-    }
+}
 .jewelrandomnumber {
     background-color: #08a6ce;
-    width: 160px; 
+    width: 190px; 
     text-align: left;
     height: 100px;
     font-size: 20px;
     float: left;
     margin: 5px;
-    }
+    color: white;
+
+}
 .jewelscores {
     background-color: #08a6ce;
-    width: 100px;
+    width: 190px;
     text-align: center;
     height: 100px;
     float: left;
     margin: 5px;
-    }
-    .jewels  {
-        clear: both;
-        margin: 0px, 0px, 0px, 5px;
-        padding: 5px;
-    }
-.jewelscoreheader{
-    background-color: #08a6ce;
-    width: 160px;
+    color: white;
+
+}
+.jewels {
+    clear: both;
+    margin: 0px, 0px, 0px, 5px;
     padding: 5px;
+    text-align: center; 
+    width: 400px; 
+
+}
+.jewelscoreheader {
+    background-color: #08a6ce;
+    width: 400px;
+    padding: 5px;
+    margin-left: 5px;
+    color: white;
+
+
 }
 
 .jeweltotalscore {
     background-color: #08a6ce;
-    width: 160px;
+    width: 400px;
     text-align: left;
     height: 100px;
     font-size: 20px;
-    color: black;
+    color: white;
+    padding: 5px; 
+    margin-left: 5px;
+
 }
 
 .crystal-image {
@@ -63,4 +78,25 @@ body {
     width: 70px;
     margin: 0px; 
     padding: 0px;
-    }
+}
+
+span.beveled {
+    position:relative;    
+    height:50px;    
+    width:60px;    
+    display:inline-block;
+    margin-right: 10px;
+}
+
+span.beveled span {
+    position:absolute;    
+    left:0;    
+    top:0;    
+    display:inline-block;    
+    height:50px;    
+    width:60px;    
+    border:5px solid;    
+    border-color:#fff #000 #000 #fff;    
+    filter:alpha(opacity=40);    
+    opacity:0.4;
+}
