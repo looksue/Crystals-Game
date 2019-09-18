@@ -13,7 +13,7 @@ Tech/Framework: HTML5, CSS3, JavaScript, JQuery
 
 Features: beveled buttons, reset, updates wins/losses for multiple games
 
-Code Exmaple:
+Code Example:
 // display game status
     $("#jewelrandomnumber").text("Random number to match is: " + randomNumber);
     $("#jeweltotalscore").text(totalScore);
