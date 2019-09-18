@@ -5,4 +5,30 @@ The values of the crystals are hidden from you until you click on it. You can cl
 If you match the number, you win.
 If you go over the number, you lose. 
 Then game resets back to a new random number and you can play again.
+
+Motivation: Embrace the math functions in JavaScript. 
+
+Code Style: Standard
+Tech/Framework: HTML5, CSS3, JavaScript, JQuery
+
+Features: beveled buttons, reset, updates wins/losses for multiple games
+
+Code Exmaple:
+// display game status
+    $("#jewelrandomnumber").text("Random number to match is: " + randomNumber);
+    $("#jeweltotalscore").text(totalScore);
+
+    if (justwonorlost === "") {
+        $("#jewelscores").html("<p>Wins: " + wins + "</p><p>Losses: " + losses + "</p>");
+    }
+    if (justwonorlost === "won") {
+        $("#jewelscores").html("<p>You won!<br />Wins: " + wins + "</p><p>Losses: " + losses + "</p>");
+    }
+    if (justwonorlost === "lost") {
+        $("#jewelscores").html("<p>You lost!<br />Wins: " + wins + "</p><p>Losses: " + losses + "</p>");
+    }
+    justwonorlost = "";
+
+Screenshot: ![Crystals Game](https://github.com/looksue/Crystals-Game/blob/master/assets/images/screenshot.png)
+
 https://looksue.github.io/Crystals-Game/
