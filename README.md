@@ -32,6 +32,7 @@ Then game resets back to a new random number and you can play again.
     justwonorlost = ""; 
 ```
 **Screenshot:**
+
  ![Crystals Game](https://github.com/looksue/Crystals-Game/blob/master/assets/images/screenshot.png)
 
 **Link to Repository:** https://looksue.github.io/Crystals-Game/
