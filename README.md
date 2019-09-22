@@ -6,15 +6,17 @@ If you match the number, you win.
 If you go over the number, you lose. 
 Then game resets back to a new random number and you can play again.
 
-Motivation: Embrace the math functions in JavaScript. 
+**Motivation:** Embrace the math functions in JavaScript. 
 
-Code Style: Standard
-Tech/Framework: HTML5, CSS3, JavaScript, JQuery
+**Code Style:** Standard
 
-Features: beveled buttons, reset, updates wins/losses for multiple games
+**Tech/Framework:** HTML5, CSS3, JavaScript, JQuery
 
-Code Example:
-// display game status
+**Features:** beveled buttons, reset, updates wins/losses for multiple games
+
+**Code Example:**
+```javascript
+    //display game status
     $("#jewelrandomnumber").text("Random number to match is: " + randomNumber);
     $("#jeweltotalscore").text(totalScore);
 
@@ -27,8 +29,9 @@ Code Example:
     if (justwonorlost === "lost") {
         $("#jewelscores").html("<p>You lost!<br />Wins: " + wins + "</p><p>Losses: " + losses + "</p>");
     }
-    justwonorlost = "";
+    justwonorlost = ""; 
+```
+**Screenshot:**
+ ![Crystals Game](https://github.com/looksue/Crystals-Game/blob/master/assets/images/screenshot.png)
 
-Screenshot: ![Crystals Game](https://github.com/looksue/Crystals-Game/blob/master/assets/images/screenshot.png)
-
-https://looksue.github.io/Crystals-Game/
+**Link to Repository:** https://looksue.github.io/Crystals-Game/
