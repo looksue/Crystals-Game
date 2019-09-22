@@ -8,7 +8,7 @@ Then game resets back to a new random number and you can play again.
 
 **Motivation:** Embrace the math functions in JavaScript. 
 
-**Code Style:** Standard
+**Code Style:** Tab
 
 **Tech/Framework:** HTML5, CSS3, JavaScript, JQuery
 
@@ -35,4 +35,4 @@ Then game resets back to a new random number and you can play again.
 
  ![Crystals Game](https://github.com/looksue/Crystals-Game/blob/master/assets/images/screenshot.png)
 
-**Link to Repository:** https://looksue.github.io/Crystals-Game/
+**Link to Project:** https://looksue.github.io/Crystals-Game/
